@@ -1,16 +1,17 @@
 const myFunction = {
   sum: function (a, b) {
-    return a + b;
+    return Number(a) + b;
   },
-  minus: function (a, b) {
+  subtract: function (a, b) {
     return a - b;
   },
-  isNull: "null",
-  myObj: {
-    firstName: "Ronald",
-    lastName: "De Mesa",
+  multiply: function (a, b) {
+    return a * b;
   },
-  myArray: ["ronald", "de Mesa"],
+  divide: function (a, b) {
+    return a / b;
+  },
 };
 
+//for automated unit testing
 module.exports = myFunction;
